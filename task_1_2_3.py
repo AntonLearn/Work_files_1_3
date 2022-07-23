@@ -59,8 +59,6 @@ def write_result_file(root_of_path, file_name, mode, coding_type, list_of_read_f
     full_path_result_file = os.path.join(root_of_path,file_name)
     list_of_files_num_strings = list_of_read_file_create_list[0]
     dict_of_files_strings = list_of_read_file_create_list[1]
-    print(list_of_files_num_strings)
-    print(dict_of_files_strings)
     with open(full_path_result_file, mode, encoding=coding_type) as file_of_result:
         for i_num_strings_name_files in range(len(list_of_files_num_strings)):
             if i_num_strings_name_files == 0:
@@ -93,6 +91,5 @@ dict_ingredients_for_shoping = get_shop_list_by_dishes(list_dishes, num_persons,
 #            и запись результатов в результирующий файл
 # Чтение данных из заданных файлов и сортировка файлов по возрастанию количества строк в них
 list_read_file_create_list = read_file_create_list(LIST_NAMES_FILES, ROOT_PATH, "r", "utf-8")
-print(list_read_file_create_list)
 # Запись резульатов в результирующий файл
 write_result_file(ROOT_PATH, FILE_NAMES[1], "w", "utf-8", list_read_file_create_list)
