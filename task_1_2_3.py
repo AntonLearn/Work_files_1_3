@@ -91,5 +91,5 @@ dict_ingredients_for_shoping = get_shop_list_by_dishes(list_dishes, num_persons,
 #            и запись результатов в результирующий файл
 # Чтение данных из заданных файлов и сортировка файлов по возрастанию количества строк в них
 list_read_file_create_list = read_file_create_list(LIST_NAMES_FILES, ROOT_PATH, "r", "utf-8")
-# Запись резульатов в результирующий файл
+# Запись результатов в результирующий файл
 write_result_file(ROOT_PATH, FILE_NAMES[1], "w", "utf-8", list_read_file_create_list)
